@@ -1,0 +1,56 @@
+Integer.MIN_VALUE
+Integer.MAX_VALUE
+Long.MIN_VALUE
+Long.MAX_VALUE
+Float.MAX_VALUE
+Double.MIN_VALUE
+
+Array related operations-->
+1)array.length -> to get length of array
+2)Arrays.sort(array) -> sorts array
+3)Arrays.sort(array,new ComparatorChild()) -> sort array as per ComparatorChild
+i.e. 
+Class ComparatorChild implements Comparator<Type>(){
+public int compare(Type one,Type two){
+	return one-two;//how you want to perform comparison
+}
+}
+Note: Array should be class type.
+4)Arrays.toString(array) -> converts entire array to string(easy for printing)
+5)Arrays.sort(array,fromtIndex,toIndex+1) -> sorts array from fromIndex to toIndex
+
+
+Note : substring method in string & stringbuilder throws exception if index values are invalid or out of range
+       llly indexOf method returns -1 in case of failure
+String related
+1)str.charAt(index) -> Returns character at given index else exception if invalid index
+2)str.substring(indexStart,indexEnd+1) -> Returns substring from startIndex to endIndex 
+3)str.substring(indexStart) -> Returns substring from start index to the end of the string
+4)str.split(regex) -> returns str[] after splitting the str as per regex
+5)str.length() -> returns length of string
+6)str.indexOf(substring,startIndex) -> returns first index of first occurence of substring from startIndex onwards
+7)str.toUpperCase() / str.toLowerCase -> you know it
+
+StringBuilder related
+1)sb.length() -> returns length of characters in sb
+2)sb.substring(indexStart,indexEnd+1) -> returns substring from startIndex to endIndex
+3)sb.substring(indexStart) -> returns substring from startIndex to end of the string
+4)sb.indexOf(substring,startIndex) -> returns first index of first occurence of substring from startIndex onwards
+5)sb.append(substring) -> adds substring at the end of the stringbuilder
+6)sb.insert(index,substring) -> adds substring at given index
+7)sb.toString() -> converts sb to str
+8)sb.delete(startIndex,indexEnd+1) -> deletes string at given index range else throws error
+
+change of base log10(number) = log2(number)/log2(10)
+Math related functions
+1)Math.abs(number) -> returns absolute value of a given number
+2)Math.pow(base,power) -> returns base^power
+3)Math.log10(number) -> returns log10(number)
+4)Math.log(number) -> returns loge(number)
+5)Math.ceil(number) -> returns integer top value
+6)Math.floor(number) -> returns integer floor value
+
+ 
+List method
+1)Convert list<int[]> to int[][] ->  list.toArray(new int[row][col]);
+Here row = list.size() & col = list.get(0).length; {Cos element in the list is array(int[])}
